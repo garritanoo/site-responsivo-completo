@@ -1,0 +1,19 @@
+{
+  "name": "criando-site-completo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/garritanoo/site-responsivo-completo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/garritanoo/site-responsivo-completo/issues"
+  },
+  "homepage": "https://github.com/garritanoo/site-responsivo-completo#readme"
+}
