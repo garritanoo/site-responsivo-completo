@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/garritanoo/site-responsivo-completo/issues"
   },
-  "homepage": "https://github.com/garritanoo/site-responsivo-completo#readme"
+  "homepage": "https://github.com/garritanoo/site-responsivo-completo#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-ruby-sass": "^3.0.0",
+    "gulp-watch": "^5.0.0"
+  }
 }
