@@ -116,21 +116,31 @@ section.sobre .itens {
       -moz-order: 5;
       -ms-flex-order: 5;
       order: 5; }
-section.sobre .textos {
+
+.textos {
   position: relative;
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
   text-align: center; }
   @media (min-width: 768px) {
-    section.sobre .textos {
+    .textos {
       float: left;
       width: 66.6666666667%; } }
   @media (min-width: 768px) {
-    section.sobre .textos {
+    .textos {
       margin-left: 16.6666666667%; } }
-  section.sobre .textos p {
+  .textos p {
     font-size: 30px;
     font-size: 1.875rem; }
-  section.sobre .textos .botao {
+  .textos .botao {
+    display: table;
     margin: 30px auto; }
+
+header {
+  background-image: url("../../images/fundo-slide-pagina-inicial.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-color: #000;
+  background-attachment: fixed;
+  background-size: cover; }
