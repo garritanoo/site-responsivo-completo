@@ -137,6 +137,19 @@ header {
     header nav ul li a {
       color: #fff !important;
       text-transform: uppercase !important; }
+      header nav ul li a:hover::after {
+        width: 100%; }
+      header nav ul li a::after {
+        content: "";
+        display: block;
+        width: 0%;
+        height: 2px;
+        background-color: #fff;
+        margin: 5px auto 0;
+        -moz-transition: all 0.3s linear;
+        -o-transition: all 0.3s linear;
+        -webkit-transition: all 0.3s linear;
+        transition: all 0.3s linear; }
   header .social li {
     display: inline-block;
     margin: 0 10px 0 0; }
