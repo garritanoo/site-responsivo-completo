@@ -7,7 +7,10 @@
   border: 2px solid #000;
   color: #000;
   text-transform: uppercase;
-  font-weight: bold; }
+  font-weight: bold;
+  -webkit-transition: 0.3;
+  -o-transition: 0.3;
+  transition: 0.3; }
   .botao:hover {
     border-color: #31b1e7;
     color: #31b1e7; }
