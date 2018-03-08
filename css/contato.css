@@ -84,9 +84,9 @@ header {
     border: 2px solid #e1e1e1;
     padding: 7px;
     text-transform: uppercase;
-    -webkit-transition: 0.3;
-    -o-transition: 0.3;
-    transition: 0.3; }
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s; }
     .contato form input:hover,
     .contato form select:hover,
     .contato form textarea:hover {
