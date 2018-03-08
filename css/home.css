@@ -141,7 +141,9 @@ section.sobre .itens {
     margin: 30px auto; }
 
 header {
-  background-image: url("../../images/fundo-slide-pagina-inicial.jpg");
+  min-height: 335px;
+  margin: 0 0 25px;
+  background-image: url("../images/fundo-slide-pagina-inicial.jpg");
   background-position: top center;
   background-repeat: no-repeat;
   background-color: #000;
