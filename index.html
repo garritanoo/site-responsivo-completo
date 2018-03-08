@@ -7,6 +7,7 @@
 	<title>Site Responsivo</title>
 	<link rel="stylesheet" href="css/home.css">
 	<link rel="stylesheet" href="css/geral.css">
+	<link rel="stylesheet" href="bower_components/wow/css/libs/animate.css">
 	<link rel="stylesheet" href="css/plugins.css">
 </head>
 <body>
@@ -50,7 +51,7 @@
 					</ul>
 				</div>
 
-				<h1><strong>Juarez Garritano</strong></h1>
+				<h1 class="wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s"><strong>Juarez Garritano</strong></h1>
 
 				<p>Web Designer // Designer Gráfico</p>
 			</div>
@@ -60,23 +61,23 @@
 				<div class="container">
 					<div class="itens">
 
-						<div class="foto">
+						<div class="foto wow fliInX" data-wow-duration"1s" data-wow-delay="5s">
 							<img src="images/foto-tag-miolo.png" alt="Foto Tag">
 						</div>
 
-						<div class="icone-lapis">
+						<div class="icone-lapis wow flipInX" data-wow-duration="1s" data-wow-delay="1s">
 							<span class="fas fa-pencil"></span>
 						</div>
 
-						<div class="icone-codigo">
+						<div class="icone-codigo wow flipInX" data-wow-duration="1s" data-wow-delay="2s">
 							<span class="fas fa-code"></span>
 						</div>
 
-						<div class="icone-coracao">
+						<div class="icone-coracao wow flipInX" data-wow-duration="1s" data-wow-delay="3s">
 							<span class="fas fa-heart"></span>
 						</div>
 
-						<div class="icone-compartilhar">
+						<div class="icone-compartilhar wow flipInX" data-wow-duration="1s" data-wow-delay="4s">
 							<span class="fas fa-share"></span>
 						</div>
 					</div>
@@ -107,6 +108,7 @@
 		</div>
 
 		<script src="bower_components/jquery/dist/jquery.min.js"></script>
+		<script src="bower_components/wow/dist/wow.min.js"></script>
 		<script>
 			$(function(){
 				$('.toggle').click(function(){
@@ -114,6 +116,7 @@
 					$('.menu-responsivo').toggleClass('ativo');
 					$(this).toggleClass('ativo');
 				});
+				new WOW().init();
 			});
 		</script>
 	</body>

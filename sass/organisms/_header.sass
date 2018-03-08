@@ -48,6 +48,19 @@ header
 					color: $branco !important
 					text-transform: uppercase !important
 
+					&:hover
+						&::after
+							width: 100%
+
+					&::after
+						content: ""
+						display: block
+						width: 0%
+						height: 2px
+						background-color: $branco
+						margin: 5px auto 0
+						+transition(0.3s)
+
 	.social
 		li
 			display: inline-block
