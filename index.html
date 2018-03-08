@@ -10,82 +10,111 @@
 	<link rel="stylesheet" href="css/plugins.css">
 </head>
 <body>
-	<header>
-		<div class="container">
-			<div class="logo">
-				<a href="index.html">
-					<img src="images/logo-tag-top.svg" alt="Logo Topo Tag">
-				</a>
-			</div>
-			<div class="links">
-				<nav>
-					<ul>
-						<li><a href="index.html">Home</a></li>
-						<li><a href="sobre.html">Sobre</a></li>
-						<li><a href="portfolio.html">Portfólio</a></li>
-						<li><a href="contato.html">Contato</a></li>
-					</ul>
-				</nav>
 
-				<ul class="social">
-					<li><a href="#"><span class="fas fa-facebook"></span></a></li>
-					<li><a href="#"><span class="fas fa-github"></span></a></li>
-				</ul>
-			</div>
+	<nav class="menu-responsivo">
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="sobre.html">Sobre</a></li>
+			<li><a href="portfolio.html">Portfólio</a></li>
+			<li><a href="contato.html">Contato</a></li>
+		</ul>
+	</nav>
 
-			<h1><strong>Juarez Garritano</strong></h1>
-
-			<p>Web Designer // Designer Gráfico</p>
-		</div>
-	</header>
-	<main>
-		<section class="sobre">
+	<div class="layout">
+		<header>
 			<div class="container">
-				<div class="itens">
+				<div class="logo">
+					<a href="index.html">
+						<img src="images/logo-tag-top.svg" alt="Logo Topo Tag">
+					</a>
+				</div>
+				<div class="links">
+					<nav>
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="sobre.html">Sobre</a></li>
+							<li><a href="portfolio.html">Portfólio</a></li>
+							<li><a href="contato.html">Contato</a></li>
+						</ul>
+					</nav>
 
-					<div class="foto">
-						<img src="images/foto-tag-miolo.png" alt="Foto Tag">
-					</div>
+					<a class="toggle" href="javascript:;">
+						<span></span>
+						<span></span>
+						<span></span>
+					</a>
 
-					<div class="icone-lapis">
-						<span class="fas fa-pencil"></span>
-					</div>
-
-					<div class="icone-codigo">
-						<span class="fas fa-code"></span>
-					</div>
-
-					<div class="icone-coracao">
-						<span class="fas fa-heart"></span>
-					</div>
-
-					<div class="icone-compartilhar">
-						<span class="fas fa-share"></span>
-					</div>
+					<ul class="social">
+						<li><a href="#"><span class="fas fa-facebook"></span></a></li>
+						<li><a href="#"><span class="fas fa-github"></span></a></li>
+					</ul>
 				</div>
 
-				<div class="textos">
+				<h1><strong>Juarez Garritano</strong></h1>
 
-					<p><strong>Lorem ipsum dolor sit amet, consectetur</strong> adipisicing elit.
-						Consectetur at illum non maxime quae doloremque qui
-						harum accusantium nemo, earum quisquam veritatis,
-						numquam distinctio sit tempore? Error totam
-						excepturi aliquam!</p>
-
-						<a href="" class="botao medio"><span class="fa fa-eye"></span>Continue lendo</a>
-					</div>
-				</div>
-			</section>
-		</main>
-
-		<footer>
-			<div class="logo-footer">
-				<a href="#">
-					<img src="images/logo-tag-footer.svg" alt="Logo TAG Footer">
-				</a>
-
-				<p>2018 Todos os direitos reservados</p>
+				<p>Web Designer // Designer Gráfico</p>
 			</div>
-		</footer>
+		</header>
+		<main>
+			<section class="sobre">
+				<div class="container">
+					<div class="itens">
+
+						<div class="foto">
+							<img src="images/foto-tag-miolo.png" alt="Foto Tag">
+						</div>
+
+						<div class="icone-lapis">
+							<span class="fas fa-pencil"></span>
+						</div>
+
+						<div class="icone-codigo">
+							<span class="fas fa-code"></span>
+						</div>
+
+						<div class="icone-coracao">
+							<span class="fas fa-heart"></span>
+						</div>
+
+						<div class="icone-compartilhar">
+							<span class="fas fa-share"></span>
+						</div>
+					</div>
+
+					<div class="textos">
+
+						<p><strong>Lorem ipsum dolor sit amet, consectetur</strong> adipisicing elit.
+							Consectetur at illum non maxime quae doloremque qui
+							harum accusantium nemo, earum quisquam veritatis,
+							numquam distinctio sit tempore? Error totam
+							excepturi aliquam!</p>
+
+							<a href="" class="botao medio"><span class="fa fa-eye"></span>Continue lendo</a>
+						</div>
+					</div>
+				</section>
+			</main>
+
+			<footer>
+				<div class="logo-footer">
+					<a href="#">
+						<img src="images/logo-tag-footer.svg" alt="Logo TAG Footer">
+					</a>
+
+					<p>2018 Todos os direitos reservados</p>
+				</div>
+			</footer>
+		</div>
+
+		<script src="bower_components/jquery/dist/jquery.min.js"></script>
+		<script>
+			$(function(){
+				$('.toggle').click(function(){
+					$('.layout').toggleClass('ativo');
+					$('.menu-responsivo').toggleClass('ativo');
+					$(this).toggleClass('ativo');
+				});
+			});
+		</script>
 	</body>
 	</html>
